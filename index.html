@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/selectric.css">
+    <link rel="stylesheet" href="files/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230119171200">
+    <title>Главная</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+    <div class="container">
+        <div class="header__title">
+            <h1>Облигации в России</h1>
+        </div>
+        <div class="header__content">
+            <p>Облигации федерального, субфедерального займа, еврооблигации и облигации самых известных компаний России.
+                Изучайте стоимость облигаций и ее изменение, доходность, купонные выплаты и многие другие показатели.
+                Чтобы узнать больше про облигации и инвестирование в ценные бумаги, посетите наш <a href="#">образовательный раздел</a>
+                с множеством полезной информации.</p>
+            <a href="#">Показать весь&nbsp;</a>
+        </div>
+        <div class="header__search">
+            <form class="header__search-form">
+                <input type="text" value="" placeholder=" Название или тикер" class="header__search-input"> 
+                <button type="submit" class="header__search-button"></button>
+                <button class="header__search-button-reset"></button>
+            </form>
+        </div>
+    </div>
+</header>
+        <main class="main">
+            <div class="container">
+                <div class="main__title">
+                    <h2>Все об инвестициях</h2>
+                </div>
+                <div class="main__content content">
+                    <div class="content__item stocks">
+                        <h3 class="content__item__title">Акции</h3>
+                        <p>Покупка акций российских и мировых компаний</p>
+                        <button class="content__item__button button-color">Купить</button>
+                    </div>
+                    <div class="content__item">
+                        <h3 class="content__item__title">Облигации</h3>
+                        <p>Инвестируйте в ценные бумаги и зарабатывайте на процентах</p>
+                        <button class="content__item__button button-color">Подобрать</button>
+                    </div>
+                    <div class="content__item">
+                        <h3 class="content__item__title">Дивиденды</h3>
+                        <p>Размеры дивидендов и даты выплат на календаре</p>
+                        <button class="content__item__button button-white">Подробнее</button>
+                    </div>
+                    <div class="content__item iia">
+                        <h3 class="content__item__title">Индивидуальный инвестиционный счет</h3>
+                        <p>Откройте счет и увеличивайте доходность своих инвестиций</p>
+                        <button class="content__item__button button-color">Открыть ИИС</button>
+                    </div>
+                    <div class="content__item brokers">
+                        <h3 class="content__item__title">Брокеры</h3>
+                        <p>Инвестируйте вместе с профессионалами</p>
+                        <button class="content__item__button button-white">Выбрать</button>
+                    </div>
+                    <div class="content__item">
+                        <h3 class="content__item__title">Обучение</h3>
+                        <p>Учитесь инвестировать БЕСПЛАТНО вместе с Банкирос</p>
+                        <button class="content__item__button button-white">Пройти обучение</button>
+                    </div>
+                    <div class="content__item">
+                        <div class="content__item__header">
+                            <h3 class="content__item__title mtop5">Акции</h3>
+                            <select name="period" id="period">
+                                <option value="one">1 день</option>
+                                <option value="three">3 дня</option>
+                                <option value="week">Неделя</option>
+                                <option value="month">Месяц</option>
+                                <option value="year">Год</option>
+                            </select>
+                        </div>
+                        <div class="tabs">
+                            <nav class="tabs__items">
+                                <a href="#tab_1" class="tabs__item active">Лидеры Роста</a>
+                                <a href="#tab_2" class="tabs__item">Tab Inactive</a>
+                            </nav>
+                            <div class="tabs__body">
+                                <div id="tab_1" class="tabs__body__content active">
+                                    <table>
+                                        <tr>
+                                            <th>Тикер</th>
+                                            <th>Посл. цена</th>
+                                            <th>Изм.</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="tiker"><picture><source srcset="img/vtb_logo.webp" type="image/webp"><img src="img/vtb_logo.png" alt="logo" class="logo" loading="lazy"></picture>
+                                                <div class="lider"><a href="#" class="liderName">ВТБ банк</a>
+                                                    <div class="stocksName">VTBR</div>
+                                                </div>
+                                            </td>
+                                            <td class="lastPrice">4.790 ₽</td>
+                                            <td class="changeUp">
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17"
+                                                        width="17" height="17" transform="translate(0 3)">
+                                                        <path fill="currentColor"
+                                                            d="M8.5 3.84l.34.28 4 3.5-.66.76L9.01 5.6V14H8V5.6L4.84 8.38l-.66-.76 4-3.5.33-.28z">
+                                                        </path>
+                                                    </svg>
+                                                </span>
+                                                <span class="persent">8.27 %</span>
+                                                <span class="ruble">0.36 ₽</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tiker noLogo"><img src="img/no-logo.png" alt="logo"
+                                                    class="logo" loading="lazy">
+                                                <div class="lider"><a href="#" class="liderName">Пао «Русгидро»</a>
+                                                    <div class="stocksName">HYDR</div>
+                                                </div>
+                                            </td>
+                                            <td class="lastPrice">0.0132 ₽</td>
+                                            <td class="changeDown">
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17"
+                                                        width="17" height="17" transform="translate(0 3) rotate(180) ">
+                                                        <path fill="currentColor"
+                                                            d="M8.5 3.84l.34.28 4 3.5-.66.76L9.01 5.6V14H8V5.6L4.84 8.38l-.66-.76 4-3.5.33-.28z">
+                                                        </path>
+                                                    </svg>
+                                                </span>
+                                                <span class="persent">4.83 %</span>
+                                                <span class="ruble">0.36 ₽</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tiker"><picture><source srcset="img/disney_logo.webp" type="image/webp"><img src="img/disney_logo.png" alt="logo" class="logo" loading="lazy"></picture>
+                                                <div class="lider"><a href="#" class="liderName">The Walt Disney
+                                                        Company</a>
+                                                    <div class="stocksName">DIS-RM</div>
+                                                </div>
+                                            </td>
+                                            <td class="lastPrice">10 900 $</td>
+                                            <td class="changeUp">
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17"
+                                                        width="17" height="17" transform="translate(0 3)">
+                                                        <path fill="currentColor"
+                                                            d="M8.5 3.84l.34.28 4 3.5-.66.76L9.01 5.6V14H8V5.6L4.84 8.38l-.66-.76 4-3.5.33-.28z">
+                                                        </path>
+                                                    </svg>
+                                                </span>
+                                                <span class="persent">4.34 %</span>
+                                                <span class="ruble">0.36 ₽</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tiker"><picture><source srcset="img/gazprom_logo.webp" type="image/webp"><img src="img/gazprom_logo.png" alt="logo" class="logo" loading="lazy"></picture>
+                                                <div class="lider"><a href="#" class="liderName">Газпром</a>
+                                                    <div class="stocksName">GAZP</div>
+                                                </div>
+                                            </td>
+                                            <td class="lastPrice">25.70 ₽</td>
+                                            <td class="changeUp">
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17"
+                                                        width="17" height="17" transform="translate(0 3)">
+                                                        <path fill="currentColor"
+                                                            d="M8.5 3.84l.34.28 4 3.5-.66.76L9.01 5.6V14H8V5.6L4.84 8.38l-.66-.76 4-3.5.33-.28z">
+                                                        </path>
+                                                    </svg>
+                                                </span>
+                                                <span class="persent">4.34 %</span>
+                                                <span class="ruble">0.36 ₽</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tiker"><picture><source srcset="img/disney_logo.webp" type="image/webp"><img src="img/disney_logo.png" alt="logo" class="logo" loading="lazy"></picture>
+                                                <div class="lider"><a href="#" class="liderName">The Walt Disney
+                                                        Company</a>
+                                                    <div class="stocksName">DIS-RM</div>
+                                                </div>
+                                            </td>
+                                            <td class="lastPrice">10 900 $</td>
+                                            <td class="changeUp">
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17"
+                                                        width="17" height="17" transform="translate(0 3)">
+                                                        <path fill="currentColor"
+                                                            d="M8.5 3.84l.34.28 4 3.5-.66.76L9.01 5.6V14H8V5.6L4.84 8.38l-.66-.76 4-3.5.33-.28z">
+                                                        </path>
+                                                    </svg>
+                                                </span>
+                                                <span class="persent">4.34 %</span>
+                                                <span class="ruble">0.36 ₽</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tiker"><picture><source srcset="img/cisco_logo.webp" type="image/webp"><img src="img/cisco_logo.png" alt="logo" class="logo" loading="lazy"></picture>
+                                                <div class="lider"><a href="#" class="liderName">Cisco Systems, Inc.</a>
+                                                    <div class="stocksName">CSCO-RM</div>
+                                                </div>
+                                            </td>
+                                            <td class="lastPrice">10 900 $</td>
+                                            <td class="changeUp">
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17"
+                                                        width="17" height="17" transform="translate(0 3)">
+                                                        <path fill="currentColor"
+                                                            d="M8.5 3.84l.34.28 4 3.5-.66.76L9.01 5.6V14H8V5.6L4.84 8.38l-.66-.76 4-3.5.33-.28z">
+                                                        </path>
+                                                    </svg>
+                                                </span>
+                                                <span class="persent">25.70 ₽</span>
+                                                <span class="ruble">0.36 ₽</span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <div class="tabs__body__update">Обновлено в 12:30</div>
+                                    <a href="#" class="more-contents">Больше лидеров роста&nbsp;</a>
+                                </div>
+                                <div id="tab_2" class="tabs__body__content">Контент2</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content__item">
+                        <div class="content__item__header">
+                            <h3 class="content__item__title">Экономический календарь</h3>
+                        </div>
+                        <div class="content__item__content">
+                            <table class="calendar">
+                                <tr>
+                                    <th colspan="2" class="calendar__date">Ноябрь 17</th>
+                                </tr>
+                                <tr>
+                                    <td class="calendar__time">
+                                        <div class="red-back-time">13:00</div>
+                                    </td>
+                                    <td class="calendar__country"><picture><source srcset="img/russia.webp" type="image/webp"><img src="img/russia.png" alt="Russia" loading="lazy"></picture></td>
+                                    <td>
+                                        <div class="calendar__circle red"></div>
+                                    </td>
+                                    <td class="calendar__event">Индекс цен на продовольствие</td>
+                                </tr>
+                                <tr>
+                                    <td class="calendar__time">
+                                        <div class="red-back-time">13:00</div>
+                                    </td>
+                                    <td class="calendar__country"><picture><source srcset="img/russia.webp" type="image/webp"><img src="img/russia.png" alt="Russia" loading="lazy"></picture></td>
+                                    <td>
+                                        <div class="calendar__circle red"></div>
+                                    </td>
+                                    <td class="calendar__event">Индекс цен на продовольствие</td>
+                                </tr>
+                                <tr>
+                                    <td class="calendar__time">
+                                        <div class="red-back-time">13:00</div>
+                                    </td>
+                                    <td class="calendar__country"><picture><source srcset="img/russia.webp" type="image/webp"><img src="img/russia.png" alt="Russia" loading="lazy"></picture></td>
+                                    <td>
+                                        <div class="calendar__circle red"></div>
+                                    </td>
+                                    <td class="calendar__event">Employment Overall Flash</td>
+                                </tr>
+                                <tr>
+                                    <td class="calendar__time">
+                                        <div class="">16:45</div>
+                                    </td>
+                                    <td class="calendar__country"><picture><source srcset="img/usa.webp" type="image/webp"><img src="img/usa.png" alt="USA" loading="lazy"></picture></td>
+                                    <td>
+                                        <div class="calendar__circle orange"></div>
+                                    </td>
+                                    <td class="calendar__event">Изменение занятости (кв/кв)</td>
+                                </tr>
+                                <tr>
+                                    <td class="calendar__time">
+                                        <div class="">16:45</div>
+                                    </td>
+                                    <td class="calendar__country"><picture><source srcset="img/usa.webp" type="image/webp"><img src="img/usa.png" alt="USA" loading="lazy"></picture></td>
+                                    <td>
+                                        <div class="calendar__circle orange"></div>
+                                    </td>
+                                    <td class="calendar__event">ИПЦ Франции</td>
+                                </tr>
+                                <tr>
+                                    <td class="calendar__time">
+                                        <div class="">16:45</div>
+                                    </td>
+                                    <td class="calendar__country"><picture><source srcset="img/russia.webp" type="image/webp"><img src="img/russia.png" alt="Russia" loading="lazy"></picture></td>
+                                    <td>
+                                        <div class="calendar__circle red"></div>
+                                    </td>
+                                    <td class="calendar__event">PPI exFood/Energy MM</td>
+                                </tr>
+                                <tr>
+                                    <td class="calendar__time">
+                                        <div class="">16:45</div>
+                                    </td>
+                                    <td class="calendar__country"><picture><source srcset="img/russia.webp" type="image/webp"><img src="img/russia.png" alt="Russia" loading="lazy"></picture></td>
+                                    <td>
+                                        <div class="calendar__circle green"></div>
+                                    </td>
+                                    <td class="calendar__event">Речь члена FOMC Уильямса</td>
+                                </tr>
+                                <tr>
+                                    <td class="calendar__time">
+                                        <div class="">16:45</div>
+                                    </td>
+                                    <td class="calendar__country"><picture><source srcset="img/usa.webp" type="image/webp"><img src="img/usa.png" alt="USA" loading="lazy"></picture></td>
+                                    <td>
+                                        <div class="calendar__circle orange"></div>
+                                    </td>
+                                    <td class="calendar__event">Базовый индекс цен производителей (PPI) (г/г) (окт)</td>
+                                </tr>
+                                <tr>
+                                    <td class="calendar__time">
+                                        <div class="">16:45</div>
+                                    </td>
+                                    <td class="calendar__country"><picture><source srcset="img/russia.webp" type="image/webp"><img src="img/russia.png" alt="Russia" loading="lazy"></picture></td>
+                                    <td>
+                                        <div class="calendar__circle red"></div>
+                                    </td>
+                                    <td class="calendar__event">Индекс PCSI Thomson Reuters/Ipsos</td>
+                                </tr>
+                                <tr>
+                                    <td class="calendar__time">
+                                        <div class="">16:45</div>
+                                    </td>
+                                    <td class="calendar__country"><picture><source srcset="img/russia.webp" type="image/webp"><img src="img/russia.png" alt="Russia" loading="lazy"></picture></td>
+                                    <td>
+                                        <div class="calendar__circle green"></div>
+                                    </td>
+                                    <td class="calendar__event">EIA-Nat Gas Chg Bcf</td>
+                                </tr>
+                            </table>
+                            <a href="#" class="more-contents">Больше событий&nbsp;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer></footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/jquery.selectric.min.js"></script>
+    <script src="js/app.min.js?_v=20230119171200"></script>
+</body>
+
+</html>
